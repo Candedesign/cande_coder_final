@@ -1,0 +1,98 @@
+
+/** Spacings sizes **/
+$s-s:8px;
+$s-m:16px;
+$s-l:24px;
+$s-xl:32px;
+
+@mixin flex-center-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-p ($flex, $alineacion) {
+display:$flex;
+justify-content:$alineacion;
+}
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-empresa{  
+    width: 64px;
+    height: 64px;
+    padding: $s-l;
+    display: inline-flex;
+    padding: 12px;
+    align-items: center;
+    width: 70%;
+}
+
+
+.imagen-principal {
+    @include flex-center-center;
+    width: 100%;
+    height: auto;
+    padding: 16px 0%;  
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        }             
+}
+
+
+.imagen-small{  
+    width: 300px;  
+    height: auto;
+    justify-self: center;
+    padding: $s-m 0%;
+    align-self: center;
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        }
+    }
+
+
+.imagen-xsmall{  
+     width: 140px;  
+    height: auto;
+    justify-self: center;
+    padding: $s-m 0%;
+    align-self: center;
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+         }
+    } 
+        
+        
+input {
+    background-color: white;
+    border-radius: $s-m;
+    border: 1px solid $chalk-grey;
+    @extend .font-medium;
+    padding: $s-m;
+    margin: 16px 0px;
+    &:hover{border-color: $chalk-pink-dark;}
+        }
+
+
+.input-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+        margin: 16px 0px;   
+}
+        
+               

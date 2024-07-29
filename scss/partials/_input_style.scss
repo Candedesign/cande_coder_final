@@ -1,0 +1,28 @@
+@import"_colors.scss";
+@import"_brand_general.scss";
+
+.textarea-input {
+    background-color: $chalk-white;
+    border-radius:$s-m;
+    border: 1px solid #BBBBBB;
+    font-family: roboto;
+    padding: $s-m;
+    margin: $s-m 0px;
+}
+
+.input-label-style {
+    display: flex;
+    flex-direction: column;
+    padding: $s-s 0px;
+    margin: $s-m 0px;
+}
+
+
+.input{
+    background-color: white;
+    border-radius: $s-m;
+    border: 1px solid #BBBBBB;
+    font-family: roboto;
+    padding: $s-m;
+    margin: $s-m 0px;
+}

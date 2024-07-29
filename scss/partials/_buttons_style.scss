@@ -1,0 +1,36 @@
+@import"_colors.scss";
+
+.primary-button {   
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:$chalk-pink;
+    color:$chalk-black;
+    border-style: hidden;
+    border-radius: 16px;
+    padding: 16px 16px 16px 16px;
+    width: 100%;
+    flex-wrap: wrap;  
+    margin: 16px 0px;
+    &:hover{background-color:$chalk-pink-dark;}
+}
+
+.secondary-button {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:$chalk-white;
+    color: $chalk-black;
+    border: 1px solid $chalk-pink;
+    border-radius: 16px;
+    padding: 16px 16px 16px 16px; 
+    width: 100%;
+    flex-wrap: wrap; 
+    &:hover{background-color:$chalk-pink;}    
+}
+
+.redes-button {
+    color: $chalk-black;
+    &:hover{color:$chalk-pink-dark;}
+
+}

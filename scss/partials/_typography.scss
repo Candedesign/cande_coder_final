@@ -1,0 +1,42 @@
+@import"_colors.scss";
+
+.font-small {
+    font-family: roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: $chalk-black;
+    text-decoration: none;
+}
+
+
+
+
+.font-medium {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: $chalk-black;
+    text-decoration: none;
+}
+
+.font-large {   
+    font-size: 18px;
+    font-family: roboto;
+    font-weight: 600;
+    color: $chalk-black; 
+}
+
+.font-xlarge {    
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 500;
+    color: $chalk-black;
+}
+
+
+.font-xxlarge{  
+    font-family: roboto;
+    font-size: 24px;
+    font-weight: 600;
+    color: $chalk-black;
+}

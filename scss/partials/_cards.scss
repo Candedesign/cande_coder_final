@@ -1,0 +1,22 @@
+
+@import"_brand_general.scss";
+
+.contact-card-style {
+    display: flex;
+    @include flex-p (flex, center);
+    padding: $s-l $s-m;
+    width: 640px;
+    }
+
+
+.contact-card-d { 
+    background-color: white;
+    border-radius: $s-m;
+    box-shadow: -4px -4px 15px #D0D0CB;
+    padding: 40px $s-l;
+    width: 910px;
+    height: auto;
+    display: flex;
+    align-content: center;
+    }
+    

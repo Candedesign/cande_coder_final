@@ -1,0 +1,520 @@
+@import"./partials/_buttons_style.scss";
+@import"./partials/_typography.scss";
+@import"./partials/_colors.scss";
+@import"./partials/_input_style.scss";
+@import"./partials/_cards.scss";
+@import"./partials/_brand_general.scss";
+
+/** Header **/
+
+.header {
+    background-color:$chalk-pink;
+    box-shadow: 4px 4px 15px $chalk-grey;
+    padding: $s-m;
+    @include flex-row-center;
+    width: 100%;
+    }
+
+.logo-empresa{
+    width: 100%;
+}
+
+.logo-name {
+    @extend .font-medium;
+    margin: $s-s;
+
+}
+.bgr-menu {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.opciones-header {
+    display: flex;
+    justify-content: right;
+    width: 60%;
+    .menu {
+     display: inline-block;
+     padding: $s-s;
+    }
+    .productos-link {
+    @extend .font-medium;
+    &:hover{color:$chalk-pink-dark;}
+    }
+    .contacto-link {
+    @extend .font-medium;
+    &:hover{color:$chalk-pink-dark;}
+    }
+    .carrito-link {
+    @extend .font-medium;
+    &:hover{color:$chalk-pink-dark;}
+    }
+}
+
+/** General **/
+
+main {
+    background-color: $chalk-light;
+}
+
+/** Index **/
+
+.banner{
+    padding: 0px $s-xl;
+    margin: 40px 0px;
+.img-banner{
+    @include flex-center-center;
+    width: 100%;
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;}
+    }
+}
+
+.subtitulo-seccion {
+
+    @extend .font-xlarge;
+    margin: 32px 40px;
+
+}
+
+.card-producto{ 
+    width: auto;
+    height: auto;
+    background-color: $chalk-white;
+    box-shadow: 4px 4px 15px $chalk-grey;
+    border-radius: $s-m;
+    padding:$s-m;
+    margin: $s-xl;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    .imagen-producto {
+        @extend .imagen-small;
+    }
+    .titulo-producto-card{
+        @extend .font-medium;
+
+    }
+    .precio {
+        @extend .font-xxlarge;
+    }
+    .ver-producto-button {
+        @extend .primary-button;
+    }
+}
+
+.productos-listado {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin: $s-xl;
+}
+
+/** Producto **/
+
+.comprar-button {
+    @extend .primary-button;
+}
+
+.carrito-button {
+    @extend .secondary-button;
+}
+
+.precio {
+    @extend .font-xxlarge;
+}
+
+.descripcion-prod {
+    @extend .font-medium;
+    display: flex;
+
+}
+
+.titulo-card-prin {
+    @extend .font-xlarge;
+}
+
+.imagen-principal-producto {
+    @extend .imagen-principal;
+}
+
+.principal-card {
+    display: flex;
+    justify-content: center;
+}
+    .contenido-art {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: -4px -4px 15px #D0D0CB;
+        padding: $s-xl;
+        margin: $s-m;
+        width: 1200px;
+        height: 580px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        @include flex-row-center;
+        align-items: center;
+        .card-info {
+            padding: $s-l;
+        }
+    }   
+
+
+/** Contacto**/
+
+.input {
+    @extend .input;
+}
+
+.text-area {
+    @extend .input;
+}
+
+.enviar-button {
+    @extend .primary-button;
+}
+
+.input-label {
+    @extend .font-medium;
+}
+
+
+.input-nombre {
+    @extend .input-flex;
+}
+
+.input-email {
+    @extend .input-flex;
+}
+
+.input-telefono {
+    @extend .input-flex;
+}
+
+.input-mensaje {
+    @extend .input-flex;
+}
+
+.titulo-contacto {
+    @extend .font-xlarge;
+    padding-left: 40px;
+}
+
+.imagen-contacto {
+    border-radius: $s-m;
+}
+
+
+.seccion-contacto{  
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .contact-card {
+    background-color: $chalk-white;
+    border-radius: 16px;
+    box-shadow: -4px -4px 15px $chalk-grey;
+    padding: 40px 24px;
+    width: 910px;
+    height: auto;
+    @include flex-center-center;
+    margin: 40px;
+        
+    .formulario{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 0px 24px;
+    }
+}
+}
+
+/** Footer**/
+footer {    
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color: $chalk-pink;
+    padding: $s-l;
+    box-shadow: -4px -4px 15px $chalk-grey;
+
+}
+
+.mapa {
+    width: 380px;
+    height: 250px;
+    border-radius: 16px;
+    margin: 24px 0px;    
+}
+
+
+.contancto-footer{  
+    display: flex;
+    flex-direction: row;
+     
+}
+
+
+.redes-sociales{
+padding: 0px;
+@include flex-row-center;
+    .redes{  
+    width: 36px;
+    height: 36px;
+    @extend .redes-button;
+    
+}
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    .direccion {
+        @extend .font-medium;
+        color: $chalk-black;
+        
+    }
+    .telefono {
+        @extend .font-medium;
+        color: $chalk-black;
+    }
+}
+
+
+@media only screen and (min-width:500px) and (max-width: 960px)  {
+  /** Header **/
+  
+  .bgr-menu {
+        height: 40px;
+        width: 40px;
+        @include flex-center-center;
+        padding: $s-l;
+    }
+
+    .opciones-header {
+        display: none;
+    }
+
+ /** Index **/
+ .banner {
+    padding: $s-m 0;
+    margin: $s-m;
+ }
+    
+ .subtitulo-seccion {
+    @extend .font-xlarge;
+    margin: $s-s $s-l;
+}
+
+.card-producto{ 
+    width: 300px;
+    height: auto;
+    background-color: $chalk-white;
+    box-shadow: 4px 4px 15px $chalk-grey;
+    border-radius: $s-m;
+    padding:$s-m;
+    margin: $s-m;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    .imagen-producto {
+        @extend .imagen-small;
+    }
+    .titulo-producto-card{
+        @extend .font-medium;
+
+    }
+    .precio {
+        @extend .font-xxlarge;
+    }
+    .ver-producto-button {
+        @extend .primary-button;
+    }
+}
+
+.productos-listado {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: $s-l;
+}
+
+/** Footer **/
+
+footer {
+    @include flex-column-center; 
+    align-items: center;
+    }
+    
+    .info-footer {
+        align-items: center;
+    }
+    .redes-sociales {
+        align-items: center;
+    }
+
+/** Contacto **/
+
+.imagen-contacto {
+    display: none;
+}
+
+.contact-card {
+    padding: $s-xl;
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: 24px;    
+}
+
+ul {
+    padding: 0;
+}
+
+.titulo-contacto {
+    padding-left: 0;
+    align-self: center;
+}
+
+.formulario {
+    padding: 0px;
+}
+
+/** Producto **/
+.contenido-art {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+.card-info {
+    padding: 8px;
+}
+
+}
+
+@media only screen and (min-width:300px) and (max-width: 500px) {
+ 
+      /** Header **/
+  
+  .bgr-menu {
+    height: 40px;
+    width: 40px;
+    @include flex-center-center;
+    padding: $s-l;
+}
+
+    .opciones-header {
+    display: none;
+    
+}
+.card-producto{ 
+    width: 120px;
+    height: auto;
+    background-color: $chalk-white;
+    box-shadow: 4px 4px 15px $chalk-grey;
+    border-radius: $s-m;
+    padding:$s-m;
+    margin: $s-s;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    .imagen-producto {
+        width: 140px;  
+        height: auto;
+        justify-self: center;
+        padding: $s-m 0%;
+        align-self: center;
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            }
+    }
+}
+
+ 
+.titulo-producto-card{
+    font-size: 14px;
+
+    }
+.precio {
+    font-size: 18px;
+}
+.ver-producto-button {
+    font-size: 14px;
+}
+
+.productos-listado {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: $s-xl;
+} 
+
+
+.logo-empresa{
+    @include flex-column-center;
+}
+
+footer {
+@include flex-column-center; 
+align-items: center;
+}
+
+.info-footer {
+    align-items: center;
+}
+.redes-sociales {
+    align-items: center;
+}
+
+/** Contacto **/
+
+.imagen-contacto {
+    display: none;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: center;
+    padding: $s-s $s-s;
+    width: 400px;
+    margin: $s-m;
+    }
+
+ul {
+    padding: 0;
+}
+
+.titulo-contacto {
+    padding-left: 0;
+    align-self: center;
+}
+
+.formulario {
+    padding: 0px;
+}
+
+/** Producto **/
+.contenido-art {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: $s-m;
+}
+.card-info {
+    padding: $s-m;
+}
+
+}
